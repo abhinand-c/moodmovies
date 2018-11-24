@@ -1,1 +1,1 @@
-web: gunicorn runserver:runappserver
+web: gunicorn MoodMoviesWebApp:app
