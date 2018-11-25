@@ -30,7 +30,7 @@ def home():
         'index.html',
         title="Mood Movies",
         year=datetime.now().year,
-        message="Welcome"
+        message="Welcome!!!"
     )
 
 @app.route('/contact')
