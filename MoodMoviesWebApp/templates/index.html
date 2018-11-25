@@ -15,26 +15,25 @@
             <form method="post">
                 <input type="text" class="btn btn-default" id="Form1" size="50" placeholder="What's your mood" name="Form1">
                 <input type="submit" class="btn btn-default" id="spotButton" value="Go">
+                <b>Language:</b>
+                <select class="btn btn-default" name="F2">
+                    <option value="">Any</option>
+                    <option value="ml">Malayalam</option>
+                    <option value="en">English</option>
+                    <option value="hi">Hindi</option>
+                    <option value="ta">Tamil</option>
+                </select>
             </form>
         </p>
-        <p><a class="btn btn-default" href="http://www.google.co.in">Google &raquo;</a></p>
+
     </div>
-    
+
     <div class="col-md-4">
         <h2>You Chose: {{ message }}</h2>
         <div>
-            <form method="post">
-                <select class="btn btn-default" name="F2">
-                    <option value="happy">Happy</option>
-                    <option value="sad">Sad</option>
-                    <option value="surprise">Surprise</option>
-                    <option value="anger">Anger</option>
-                    <option value="disgust">Disgust</option>
-                </select>
-                <input type="submit" class="btn btn-default" id="spotButton" value="Go">
-            </form>
+            <p><a class="btn btn-default" href="http://www.google.co.in">Google &raquo;</a></p>
         </div>
-        </div>
+    </div>
 </div>
 
 {% endblock %}
