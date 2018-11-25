@@ -24,7 +24,7 @@ def home():
         'index.html',
         title="Mood Movies",
         year=datetime.now().year,
-        message="Welcome!!!"
+        message="Pikachu"
     )
 
 @app.route('/contact')
