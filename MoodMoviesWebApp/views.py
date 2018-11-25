@@ -24,7 +24,7 @@ def mg(a):
 def home():
     global mood
     if request.method == 'POST':
-        mood=request.form['F2']
+        mood=request.form['Form1']
         return redirect(url_for('red'))
     return render_template(
         'index.html',
