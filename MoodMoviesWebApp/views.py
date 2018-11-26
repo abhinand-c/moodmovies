@@ -19,7 +19,8 @@ def home():
     if request.method == 'POST':
         mood=request.form['Form1']
         lang=request.form['F2']
-        return redirect(url_for('red'))
+        return render_template('Redirect.html', r_url=murl(ea(mood),lang),year=67)
+        #return redirect(url_for('red'))
     return render_template(
         'index.html',
         title="Mood Movies",
