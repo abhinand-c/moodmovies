@@ -41,7 +41,7 @@ def contact():
 def login():
     if request.method == 'POST':
         ID=request.form['UID']
-        pass=request.form['Pass']
+        passcode=request.form['Pass']
         return redirect(url_for('home'))
     return render_template('login.html',title="Login",year=datetime.now().year,message="Pikachu")
 
