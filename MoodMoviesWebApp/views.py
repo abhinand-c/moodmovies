@@ -8,9 +8,11 @@ from MoodMoviesWebApp import *
 from MoodMoviesWebApp.Mov import *
 from MoodMoviesWebApp.mlink import *
 from MoodMoviesWebApp.emogen import *
+from MoodMoviesWebApp.class1 import *
 
 mood=""
 lang=""
+u=user()
 
 @app.route("/", methods=['GET', 'POST'])
 def home():
@@ -37,11 +39,11 @@ def contact():
         year=datetime.now().year,
         message='Contact ME???.'
     )
-@app.route('/login')
+@app.route('/login', methods=['GET', 'POST'])
 def login():
     if request.method == 'POST':
-        ID=request.form['UID']
-        passcode=request.form['Pass']
+        u.user_id(request.form['UID'])
+        u.pcode(request.form['Pass'])
         return redirect(url_for('home'))
     return render_template('login.html',title="Login",year=datetime.now().year,message="Pikachu")
 
