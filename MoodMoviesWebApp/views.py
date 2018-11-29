@@ -9,7 +9,7 @@ from MoodMoviesWebApp.Mov import *
 from MoodMoviesWebApp.mlink import *
 from MoodMoviesWebApp.emogen import *
 from MoodMoviesWebApp.class1 import *
-from MoodMoviesWebApp.login import *
+#from MoodMoviesWebApp.login import *
 
 mood=""
 lang=""
@@ -28,7 +28,7 @@ def home():
         'index.html',
         title="Mood Movies",
         year=datetime.now().year,
-        message=retnam()
+        message="Charizard"
     )
 
 @app.route('/contact')
