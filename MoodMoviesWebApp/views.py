@@ -13,7 +13,6 @@ from MoodMoviesWebApp.login import *
 
 mood=""
 lang=""
-user=""
 
 @app.route("/", methods=['GET', 'POST'])
 def home():
