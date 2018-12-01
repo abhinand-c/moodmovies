@@ -14,7 +14,7 @@ from MoodMoviesWebApp.login import *
 mood=""
 lang=""
 
-@app.route("/", methods=['GET', 'POST'])
+@app.route("/home", methods=['GET', 'POST'])
 def home():
     global mood,lang,user
     if request.method == 'POST':
