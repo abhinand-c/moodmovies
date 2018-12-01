@@ -19,7 +19,7 @@ def login23():
 def retnam(x):
       return u[x].uid()
 
-
+@app.route("/", methods=['GET', 'POST'])
 @app.route('/login', methods=['GET', 'POST'])
 def login():
     global users
