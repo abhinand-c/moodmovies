@@ -25,7 +25,7 @@ def home():
         'index.html',
         title="Mood Movies",
         year=datetime.now().year,
-        username=user
+        username=user.cuser
     )
 
 @app.route('/contact')
