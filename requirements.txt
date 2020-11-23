@@ -1,0 +1,4 @@
+Click
+Flask
+gunicorn
+IMDbPY==6.6
